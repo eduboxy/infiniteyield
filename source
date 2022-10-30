@@ -6929,24 +6929,24 @@ addcmd('float', {'platform'},function(args, speaker)
 			Float.Anchored = true
 			local FloatValue = -3.1
 			Float.CFrame = getRoot(pchar).CFrame * CFrame.new(0,FloatValue,0)
-			notify('Float','Float Enabled (Q = down & E = up)')
+			notify('Float','Float Enabled (Y = down & U = up)')
 			qUp = IYMouse.KeyUp:Connect(function(KEY)
-				if KEY == 'q' then
+				if KEY == 'y' then
 					FloatValue = FloatValue + 0.5
 				end
 			end)
 			eUp = IYMouse.KeyUp:Connect(function(KEY)
-				if KEY == 'e' then
+				if KEY == 'u' then
 					FloatValue = FloatValue - 0.5
 				end
 			end)
 			qDown = IYMouse.KeyDown:Connect(function(KEY)
-				if KEY == 'q' then
+				if KEY == 'y' then
 					FloatValue = FloatValue - 0.5
 				end
 			end)
 			eDown = IYMouse.KeyDown:Connect(function(KEY)
-				if KEY == 'e' then
+				if KEY == 'u' then
 					FloatValue = FloatValue + 0.5
 				end
 			end)
